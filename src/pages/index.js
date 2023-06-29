@@ -2,11 +2,15 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
+import InstallButton from "../components/InstallButton";
 
 export default function Home() {
   const router = useRouter();
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
+
+  
+
 
   useEffect(() => {
     // Load todos from cache or fetch them from the server
@@ -59,9 +63,16 @@ export default function Home() {
             <title>Todo App</title>
             <link rel="manifest" href="/manifest.json" />
           </Head>
-<div>
-  <button onClick={()=>{router.push("/access-camera")}}>Click on me to access camera</button>
-</div>
+          <div>
+            <button
+              onClick={() => {
+                router.push("/access-camera");
+              }}
+            >
+              Click on me to access camera
+            </button>
+          </div>
+          <InstallButton />
           <div>
             <h1>Todo App</h1>
 
