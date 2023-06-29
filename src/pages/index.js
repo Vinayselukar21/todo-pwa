@@ -52,9 +52,14 @@ export default function Home() {
   };
   return (
     <>
-      <Head>
-        <title>Todo App</title>
+     <Head>
+      <title>Todo App</title>
         <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/img/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
       </Head>
 
       <main>
