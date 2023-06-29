@@ -2,6 +2,15 @@ const todos = [
     { id: 1, title: 'Learn Next.js' },
     { id: 2, title: 'Build a PWA' },
     { id: 3, title: 'Create a Todo app' },
+    { id: 4, title: 'Learn Next.js' },
+    { id: 5, title: 'Build a PWA' },
+    { id: 6, title: 'Create a Todo app' },
+    { id: 7, title: 'Learn Next.js' },
+    { id: 8, title: 'Build a PWA' },
+    { id: 9, title: 'Create a Todo app' },
+    { id: 10, title: 'Learn Next.js' },
+    { id: 11, title: 'Build a PWA' },
+    { id: 12, title: 'Create a Todo app' },
   ];
   
   export default function handler(req, res) {

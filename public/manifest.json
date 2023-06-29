@@ -1,49 +1,25 @@
 {
   "name": "NextSimpleStarter",
   "short_name": "Next PWA",
+  "description": "A PWA boilerplate/reference application in React",
   "icons": [
     {
-			"src": "img/apple-touch-icon-120x120.png",
-			"sizes": "120x120",
-			"type": "image/png"
-		},
-		{
-			"src": "img/apple-touch-icon-152x152.png",
-			"sizes": "152x152",
-			"type": "image/png"
-		},
-		{
-			"src": "img/android-chrome-144x144.png",
-			"sizes": "144x144",
-			"type": "image/png"
-		},
-		{
-			"src": "img/android-chrome-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "img/android-chrome-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png",
-			"purpose": "maskable"
-		},
-		{
-			"src": "img/splashscreen-icon-384x384.png",
-			"sizes": "384x384",
-			"type": "image/png"
-		},
-		{
-			"src": "img/splashscreen-icon-512x512.png",
-			"sizes": "512x512",
-			"type": "image/png",
-			"purpose": "maskable"
-		}
+      "src": "img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": " any maskable"
+    },
+    {
+      "src": "img/splashscreen-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": " any maskable"
+    }
   ],
-  "start_url": "/?source=pwa",
-	"background_color": "#1d2020",
-	"orientation": "portrait",
-	"display": "standalone",
-	"scope": "/",
-	"theme_color": "#1d2020"
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#6850ff",
+  "orientation": "portrait"
 }
