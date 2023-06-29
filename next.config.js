@@ -6,28 +6,34 @@ const withPWA = require("next-pwa")({
   // scope: '/app',
   // sw: 'service-worker.js',
   //...
+  runtimeCaching: [
+    // Configure runtime caching for specific URLs
+    {
+      urlPattern: /^https:\/\/todo-pwa-omega.vercel.app/,      
+    },
+  ],
 });
 
-const withOffline = require("next-offline");
+// const withOffline = require("next-offline");
 
-module.exports = withOffline({
-  target: "serverless",
-  transformManifest: (manifest) => ["/"].concat(manifest),
-  workboxOpts: {
-    swDest: "static/service-worker.js",
-    runtimeCaching: [
-      {
-        urlPattern: /^https?.*/,
-        handler: "networkFirst",
-        options: {
-          cacheName: "offlineCache",
-          expiration: {
-            maxEntries: 200,
-          },
-        },
-      },
-    ],
-  },
-});
+// module.exports = withOffline({
+//   target: "serverless",
+//   transformManifest: (manifest) => ["/"].concat(manifest),
+//   workboxOpts: {
+//     swDest: "static/service-worker.js",
+//     runtimeCaching: [
+//       {
+//         urlPattern: /^https?.*/,
+//         handler: "networkFirst",
+//         options: {
+//           cacheName: "offlineCache",
+//           expiration: {
+//             maxEntries: 200,
+//           },
+//         },
+//       },
+//     ],
+//   },
+// });
 
-module.exports = { withPWA, withOffline };
+module.exports = { withPWA };
